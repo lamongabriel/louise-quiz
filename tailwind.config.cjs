@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.tsx'
+    './src/**/*.tsx',
+    './*.html'
   ],
   theme: {
     extend: {
@@ -14,6 +15,9 @@ module.exports = {
         sans: 'Roboto, sans-serif'
       }
     },
+    screens: {
+      tablet: {'max': '720px'}
+    }
   },
   plugins: []
 }

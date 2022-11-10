@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 720px){
+  body, #root, .App{
+    height: auto;
+  }
+}
