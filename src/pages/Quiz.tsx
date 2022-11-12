@@ -35,13 +35,13 @@ export function Quiz() {
   }
 
   return (
-    <div className="w-full h-full min-h-screen bg-primaryGray flex justify-center items-center">
+    <div className="w-full h-full min-h-screen flex justify-center items-center">
       {!gameEnded 
         ? 
-        <div className="bg-primaryPurple flex flex-col py-12 px-8 max-w-[420px] w-full rounded-lg text-center relative mx-2 tablet:my-24">
+        <div className="bg-primaryPurple flex flex-col py-12 px-6 max-w-[420px] w-full rounded-lg text-center relative mx-4 tablet:my-24">
           <img className='absolute w-28 h-28 rounded-full border-4 border-primaryPurple top-[-4.6rem] left-[calc(50%-56px)]' src={louiseIcon} alt='Icon Louise' />
           <p className="text-white mb-4">Questão {currentQuestionNumber.current + 1}/{DATA.length}</p>
-          <h2 className="mb-20 text-white font-bold text-2xl animate-pulse">{currentQuestion.question}</h2>
+          <h2 className="mb-16 text-white font-bold text-2xl animate-pulse">{currentQuestion.question}</h2>
           <QuestionOptions>
             {currentQuestion.options.map((option, index) => (
               <QuestionButton

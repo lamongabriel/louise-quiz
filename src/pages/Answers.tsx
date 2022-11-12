@@ -7,20 +7,18 @@ export function Answers(){
 
   const [sliderRef, instanceRef] = useKeenSlider(
     {
-      loop: true
+      loop: false
     },
-    [
-      // add plugins here
-    ]
+    []
   )
   return (
-    <div className="w-full h-full min-h-screen bg-primaryGray flex justify-center items-center">
-      <div className="bg-primaryPurple flex flex-col py-12 px-8 max-w-[420px] w-full rounded-lg text-center relative mx-2 tablet:my-24">
+    <div className="w-full h-full min-h-screen flex justify-center items-center">
+      <div className="bg-primaryPurple flex flex-col py-12 px-6 max-w-[420px] w-full rounded-lg text-center relative mx-5 tablet:my-24 overflow-hidden">
         <p className='text-white font-bold text-xl mb-6'> Arrasta pro lado</p>
         <div ref={sliderRef} className="keen-slider">
           {DATA.map(question => (
-            <div className='keen-slider__slide'>
-              <h2 className='mb-2 text-white font-bold text-xl'>{question.question}</h2>
+            <div className='keen-slider__slide bg-purple-800 rounded py-4 px-4 flex flex-col items-center justify-center overflow-hidden'>
+              <h2 className='mb-2 text-white font-bold text-xl'>{question.question.split('-')[0]}<br/>{question.question.split('-')[1]}</h2>
               <p className='text-white'>Resposta: <span className='text-green-400'>{question.options[question.answer]}</span></p>
             </div>
           ))}

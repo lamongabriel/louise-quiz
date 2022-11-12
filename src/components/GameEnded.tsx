@@ -13,13 +13,15 @@ import image70 from '../assets/win_70.png'
 import image80 from '../assets/win_80.png'
 import image90 from '../assets/win_90.png'
 import image100 from '../assets/win_100.png'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export function GameEnded ({correctQuantity, resetGame}: GameEndedProps) {
 
   const image = useRef(<img />)
   const title = useRef('')
   const text = useRef('')
+
+  const navigate = useNavigate()
 
   switch (true) {
     case correctQuantity === 100:
@@ -64,8 +66,15 @@ export function GameEnded ({correctQuantity, resetGame}: GameEndedProps) {
     break
   }
 
+  function handleAnswersPage(){
+    if(correctQuantity < 100){
+      return navigate('/answers')
+    }
+    window.alert('tu nem acertou tudo e quer ver as respostas tá de sacakkkkkkkkkkk')
+  }
+
   return (
-    <div className="bg-yellow-500 flex flex-col py-12 px-8 max-w-[420px] w-full rounded-lg text-center relative mx-2">
+    <div className="bg-yellow-500 flex flex-col py-12 px-6 max-w-[420px] w-full rounded-lg text-center relative mx-5">
       <p className="text-white">{correctQuantity.toFixed(0)}%</p>
       <h2 className="text-white font-bold text-xl mb-4">{title.current}</h2>
       <div className="rounded-md overflow-hidden">
@@ -73,7 +82,7 @@ export function GameEnded ({correctQuantity, resetGame}: GameEndedProps) {
       </div>
       <p className="text-white mt-6">{text.current}</p>
       <button className="w-100 bg-gray-100 text-primaryGray rounded mt-8 py-3 transition hover:scale-105" onClick={resetGame}>Tentar de novo</button>
-      <Link className="w-100 bg-gray-100 text-primaryGray rounded mt-2 py-3 transition hover:scale-105" to='/answers'>Ver respostas</Link>
+      <button className="w-100 bg-gray-100 text-primaryGray rounded mt-2 py-3 transition hover:scale-105" onClick={handleAnswersPage}>Ver respostas</button>
     </div>
   )
 }

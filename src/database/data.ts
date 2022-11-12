@@ -7,7 +7,7 @@ export interface DataProps {
 
 export const DATA:DataProps[] = [
   {
-    question: '(USP-SP) - Qual sua primeira mensagem pra mim no instagram?',
+    question: '(USP) - Qual sua primeira mensagem pra mim no instagram?',
     options: [
       'com toda certeza kkkkkk',
       'eu to muito feliz kkkkkkk',
