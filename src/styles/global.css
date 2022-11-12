@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 720px){
   body, #root, .App{
     height: auto;

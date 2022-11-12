@@ -23,6 +23,12 @@ export function Quiz() {
   }
 
   function handleQuestionAnswered (index: number) {
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+
     if(index === currentQuestion.answer){
       answeredCorrectQuantity.current ++
     }

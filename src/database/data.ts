@@ -122,7 +122,7 @@ export const DATA:DataProps[] = [
       'Porque você é bonitinha.',
       'Porque você me deu uma filha com 1 que eu te conheci.',
       'Porque você me faz tão bem, que eu a minha vida depende de você todos os dias.',
-      'Porque eu quero uma pata na sicuna.'
+      'Porque eu quero uma pata na sinuca, gosto de ganhar 🥴.'
     ],
     answer: 2
   },
@@ -181,10 +181,10 @@ export const DATA:DataProps[] = [
     options: [
       'Sim',
       'Não',
-      'Só quando eu estou do seu lado',
+      'Sim, mas só quando eu estou com você do meu lado',
       'Só com a roupa verde couve-flor'
     ],
-    answer: 0
+    answer: 2
   },
   {
     question: 'Sabia que eu te amo muito muito muito muito?',

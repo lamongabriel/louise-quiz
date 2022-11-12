@@ -4,6 +4,6 @@ interface QuestionButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEleme
 
 export function QuestionButton ({title, ...rest}: QuestionButtonProps) {
   return (
-    <button className="bg-secondaryPurple text-white py-2 px-4 rounded-lg text-xl hover:scale-105 transition" {...rest}>{title}</button>
+    <button className="bg-secondaryPurple text-white py-2 px-4 rounded-lg text-lg hover:scale-105 transition" {...rest}>{title}</button>
   )
 }
