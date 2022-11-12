@@ -13,6 +13,7 @@ import image70 from '../assets/win_70.png'
 import image80 from '../assets/win_80.png'
 import image90 from '../assets/win_90.png'
 import image100 from '../assets/win_100.png'
+import { Link } from "react-router-dom"
 
 export function GameEnded ({correctQuantity, resetGame}: GameEndedProps) {
 
@@ -24,7 +25,7 @@ export function GameEnded ({correctQuantity, resetGame}: GameEndedProps) {
     case correctQuantity === 100:
       image.current = <img src={image100}/>
       title.current = 'Nunca duvidei, te amo! ❤️❤️'
-      text.current = 'Espero que tenha gostado, você me faz tão bem, espero pelo menos ter te feito rir um pouco.'
+      text.current = 'Espero que tenha gostado, você me faz tão bem, espero pelo menos ter te feito rir um pouco. Você é tudo que eu podia pedir pra Deus, você é tudo pra mim, eu quero te fazer feliz hoje e sempre, eu te amo demais minha vida.'
       break
     case correctQuantity >= 90:
       image.current = <img src={image90}/>
@@ -72,6 +73,7 @@ export function GameEnded ({correctQuantity, resetGame}: GameEndedProps) {
       </div>
       <p className="text-white mt-6">{text.current}</p>
       <button className="w-100 bg-gray-100 text-primaryGray rounded mt-8 py-3 transition hover:scale-105" onClick={resetGame}>Tentar de novo</button>
+      <Link className="w-100 bg-gray-100 text-primaryGray rounded mt-2 py-3 transition hover:scale-105" to='/answers'>Ver respostas</Link>
     </div>
   )
 }

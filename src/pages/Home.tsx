@@ -27,7 +27,7 @@ export function Home() {
             </div>
           </div> 
         :
-        <p className="text-white animate-bounce">Ok... vamos ver se você é boa mesmo.</p>
+        <p className="text-white animate-bounce text-center">Ok... vamos ver se você é boa mesmo. <br/>Quem sabe rola um presentinho se você acerta tudo ...?</p>
       }
     </div>
   )

@@ -77,6 +77,16 @@ export const DATA:DataProps[] = [
     answer: 0
   },
   {
+    question: '(UFJF) - Qual primeira indireta eu mandei tentando chamar sua atenção?',
+    options: [
+      'Foto com o livro que você me emprestou e até hoje eu não li',
+      'Foto no espelho sem camisa com a correntinha no braço',
+      'R U Mine - Artic Monkeys na Duster',
+      'DAILY - Cortes no Voyage'
+    ],
+    answer: 3
+  },
+  {
     question: '(ITA) - Quantas cartas você já me deu?',
     options: [
       '4',
@@ -87,29 +97,109 @@ export const DATA:DataProps[] = [
     answer: 2
   },
   {
-    question: 'Sabia que você é a mulher mais linda do mundo?',
+    question: '(FASF) - Qual nome do meu gato que morreu?',
     options: [
-      'Sim',
-      'Não',
-      'aaaah para de graça',
-      'pescoço'
+      'Rodolfo',
+      'Paulo Roberto',
+      'Anakin',
+      'Babidi'
     ],
     answer: 0
   },
   {
-    question: 'Sabia que eu te amo muito?',
+    question: '(UGB) - Qual a primeira vez que a gente conversou direito?',
+    options: [
+      'Na igreja, na cantina no dia que eu voltei depois de ter batizado.',
+      'Na igreja, quando saímos pra falar mal do Daniel.',
+      'No cinema, dia que saímos (tomei um fora).',
+      'Na minha casa, no dia que você trouxe a Zoe.'
+    ],
+    answer: 3
+  },
+  {
+    question: '(IFRJ) - Porque eu namoro com você?',
+    options: [
+      'Porque você é bonitinha.',
+      'Porque você me deu uma filha com 1 que eu te conheci.',
+      'Porque você me faz tão bem, que eu a minha vida depende de você todos os dias.',
+      'Porque eu quero uma pata na sicuna.'
+    ],
+    answer: 2
+  },
+  {
+    question: '(VATICANO) - Qual primeiro livro da bíblia que a gente leu junto?',
+    options: [
+      'Jó',
+      'Lucas',
+      'Mateus',
+      'Apocalipse'
+    ],
+    answer: 0
+  },
+  {
+    question: '(São Judas) - Qual livro da bíblia que eu mais gostei?',
+    options: [
+      'Gênesis',
+      'Lucas',
+      'Jó',
+      'Apocalipse'
+    ],
+    answer: 3
+  },
+  {
+    question: '(IME) - Nossa data de namoro?',
+    options: [
+      '06/04/2022',
+      '04/07/2022',
+      '06/05/2022',
+      '04/06/2022'
+    ],
+    answer: 3
+  },
+  {
+    question: '(UFMG) - E daqui a?',
+    options: [
+      'Três dias',
+      'Um milhão de anos',
+      'Sim',
+      'Quando Deus quiser'
+    ],
+    answer: 1
+  },
+  {
+    question: '(UFV) - Qual nome que eu iria dar pra zoe?',
+    options: [
+      'Matilda',
+      'Jozilaine',
+      'Betânia',
+      'Andréia'
+    ],
+    answer: 2
+  },
+  {
+    question: 'Sabia que você é a mulher mais linda que esse mundo já viu?',
     options: [
       'Sim',
       'Não',
-      'clica lá em cima',
-      'em cima dessa aqui tb'
+      'Só quando eu estou do seu lado',
+      'Só com a roupa verde couve-flor'
+    ],
+    answer: 0
+  },
+  {
+    question: 'Sabia que eu te amo muito muito muito muito?',
+    options: [
+      'Sim, muito mesmo',
+      'duvido que essa seja a resposta',
+      'ah essa aqui nem é tb',
+      'muito menos essa aqui'
     ],
     answer: 0
   },
   {
     question: 'Para finalizar, quer ter uma vida comigo?',
     options: [
-      'Sim',
+      'Eu quero',
       'Resposta errada',
       'Resposta errada 2',
       'Resposta errada também',
