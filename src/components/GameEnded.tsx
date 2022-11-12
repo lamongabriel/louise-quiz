@@ -13,7 +13,7 @@ import image70 from '../assets/win_70.png'
 import image80 from '../assets/win_80.png'
 import image90 from '../assets/win_90.png'
 import image100 from '../assets/win_100.png'
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export function GameEnded ({correctQuantity, resetGame}: GameEndedProps) {
 
@@ -67,7 +67,7 @@ export function GameEnded ({correctQuantity, resetGame}: GameEndedProps) {
   }
 
   function handleAnswersPage(){
-    if(correctQuantity < 100){
+    if(correctQuantity === 100){
       return navigate('/answers')
     }
     window.alert('tu nem acertou tudo e quer ver as respostas tá de sacakkkkkkkkkkk')
